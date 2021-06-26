@@ -1,0 +1,21 @@
+<div class="row mt-5">
+    <div class="col-md-4 d-flex align-items-center">
+        <div >
+            <div class="porder w-25"></div>
+            <h2>trending person to watch <br>Right Now</h2>
+            <p>most watched person by dayes </p>
+
+            <div class="porder w-100"></div>
+        </div>
+       
+    </div>
+
+    <div class="col-md-2" *ngFor='let person of tringpersone'>
+        <div class="iteams position-relative">
+           <img [src]='thepassimg+person.profile_path' class="w-100"/>
+           <h3 class="h6">{{person.name}}</h3>
+          
+        </div>
+
+    </div>
+  </div>

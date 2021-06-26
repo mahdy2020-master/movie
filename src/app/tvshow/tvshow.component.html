@@ -1,0 +1,26 @@
+
+    <div class="row mt-5">
+        <div class="col-md-4 d-flex align-items-center">
+            <div >
+                <div class="porder w-25"></div>
+                <h2>trending tv to watch <br>Right Now</h2>
+                <p>most watched tv by dayes </p>
+    
+                <div class="porder w-100"></div>
+            </div>
+           
+        </div>
+    
+        <div class="col-md-2" *ngFor='let tv of tringtv'>
+          
+            <div class="iteams position-relative">
+                <img [src]='thepassimg+tv.poster_path' class="w-100"/>
+                <h3 class="h6">{{tv.name}}</h3>
+                <div class="theretm">
+                  {{tv.vote_average}}
+                </div>
+             </div>
+          
+    
+        </div>
+      </div>

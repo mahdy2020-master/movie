@@ -1,0 +1,44 @@
+
+<app-homeheader></app-homeheader>
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 d-flex align-items-center">
+        <div >
+            <div class="porder w-25"></div>
+            <h2>trending Movies to watch <br>Right Now</h2>
+            <p>most watched movies by dayes </p>
+
+            <div class="porder w-100"></div>
+        </div>
+       
+    </div>
+
+    <div class="col-md-2" *ngFor='let movie of tringmonies'>
+    <a [routerLink]="['/movietetals',movie.id]">
+      <div class="iteams position-relative">
+        <img [src]='thepassimg+movie.poster_path' class="w-100"/>
+        <h3 class="h6">{{movie.title}}</h3>
+        <div class="theretm">
+          {{movie.vote_average}}
+        </div>
+     </div>
+
+    </a>
+    </div>
+  </div>
+
+
+
+
+
+
+
+ 
+
+
+
+</div>
