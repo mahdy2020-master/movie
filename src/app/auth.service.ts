@@ -2,7 +2,7 @@ import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
-import jwtDecode from'jwt-Decode';
+import jwtDecode  from'jwt-decode';
 Router
 @Injectable({
   providedIn: 'root'
